@@ -1,0 +1,59 @@
+/* General form styling */
+form {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Input focus outline */
+  input:focus, select:focus {
+    outline: none;
+    border-color: #28a745;
+    box-shadow: 0 0 5px #28a745;
+  }
+  
+  /* Validation styling */
+  .is-invalid {
+    border-color: #dc3545 !important;
+    box-shadow: 0 0 5px #dc3545 !important;
+  }
+  
+  .is-valid {
+    border-color: #28a745 !important;
+    box-shadow: 0 0 5px #28a745 !important;
+  }
+  
+  /* Table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  /* Profile picture styling */
+  img {
+    border-radius: 5px;
+    max-height: 100px;
+  }
+  
+  /* Button styling */
+  button {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    color: #fff;
+  }
