@@ -1,123 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Validation</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container mt-5">
-        <h2>Registration Form</h2>
-        <form id="registrationForm" enctype="multipart/form-data" novalidate>
-            <div class="row mb-3">
-                <div class="col-md-6">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
-                    <div class="invalid-feedback">Please enter a valid name.</div>
-                </div>
-                <div class="col-md-6">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-                    <div class="invalid-feedback">Please enter a valid email.</div>
-                </div>
+<div class="container mt-5">
+    <h2>Registration Form</h2>
+    <form id="registrationForm" enctype="multipart/form-data" novalidate>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                <div class="invalid-feedback">Please enter a valid name.</div>
             </div>
-            <div class="mb-3">
-                <label for="address" class="form-label">Address</label>
-                <textarea class="form-control" id="address" placeholder="Enter your address" required></textarea>
-                <div class="invalid-feedback">Please provide a valid address.</div>
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                <div class="invalid-feedback">Please enter a valid email.</div>
             </div>
-            <div class="row mb-3">
-                <div class="col-md-4">
-                    <label for="country" class="form-label">Country</label>
-                    <select class="form-select" id="country" required>
-                        <option value="" disabled selected>Choose...</option>
-                    </select>
-                    <div class="invalid-feedback">Please select a valid country.</div>
-                </div>
-                <div class="col-md-4">
-                    <label for="state" class="form-label">State</label>
-                    <select class="form-select" id="state" required>
-                        <option value="" disabled selected>Choose...</option>
-                    </select>
-                    <div class="invalid-feedback">Please select a valid state.</div>
-                </div>
-                <div class="col-md-4">
-                    <label for="district" class="form-label">District</label>
-                    <select class="form-select" id="district" required>
-                        <option value="" disabled selected>Choose...</option>
-                    </select>
-                    <div class="invalid-feedback">Please select a valid district.</div>
-                </div>
+        </div>
+        <div class="mb-3">
+            <label for="address" class="form-label">Address</label>
+            <textarea class="form-control" id="address" placeholder="Enter your address" required></textarea>
+            <div class="invalid-feedback">Please provide a valid address.</div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <label for="country" class="form-label">Country</label>
+                <select class="form-select" id="country" required>
+                    <option value="" disabled selected>Choose...</option>
+                </select>
+                <div class="invalid-feedback">Please select a valid country.</div>
             </div>
-            <div class="row mb-3">
-                <div class="col-md-4">
-                    <label for="pincode" class="form-label">Pincode</label>
-                    <input type="text" class="form-control" id="pincode" placeholder="Enter your pincode" required>
-                    <div class="invalid-feedback">Please provide a valid pincode.</div>
-                </div>
-                <div class="col-md-4">
-                    <label for="contact" class="form-label">Contact No</label>
-                    <input type="text" class="form-control" id="contact" placeholder="Enter your contact number" required>
-                    <div class="invalid-feedback">Please provide a valid contact number.</div>
-                </div>
-                <div class="col-md-4">
-                    <label for="dob" class="form-label">Date of Birth</label>
-                    <input type="date" class="form-control" id="dob" required>
-                    <div class="invalid-feedback">Please select a valid date of birth.</div>
-                </div>
+            <div class="col-md-4">
+                <label for="state" class="form-label">State</label>
+                <select class="form-select" id="state" required>
+                    <option value="" disabled selected>Choose...</option>
+                </select>
+                <div class="invalid-feedback">Please select a valid state.</div>
             </div>
-            <div class="row mb-3">
-                <div class="col-md-4">
-                    <label for="gender" class="form-label">Gender</label>
-                    <select class="form-select" id="gender" required>
-                        <option value="" disabled selected>Choose...</option>
-                        <option value="Male">Male</option>
-                        <option value="Female">Female</option>
-                        <option value="Other">Other</option>
-                    </select>
-                    <div class="invalid-feedback">Please select a gender.</div>
-                </div>
-                <div class="col-md-4">
-                    <label for="education" class="form-label">Education</label>
-                    <select class="form-select" id="education" required>
-                        <option value="" disabled selected>Choose...</option>
-                        <option value="High School">High School</option>
-                        <option value="Diploma">Diploma</option>
-                        <option value="Bachelor's">Bachelor's</option>
-                        <option value="Master's">Master's</option>
-                        <option value="Doctorate">Doctorate</option>
-                    </select>
-                    <div class="invalid-feedback">Please select an education level.</div>
-                </div>
-                <div class="col-md-4">
-                    <label for="username" class="form-label">Username</label>
-                    <input type="text" class="form-control" id="username" placeholder="Choose a username" required>
-                    <div class="invalid-feedback">Please choose a unique username starting with a letter.</div>
-                </div>
+            <div class="col-md-4">
+                <label for="district" class="form-label">District</label>
+                <select class="form-select" id="district" required>
+                    <option value="" disabled selected>Choose...</option>
+                </select>
+                <div class="invalid-feedback">Please select a valid district.</div>
             </div>
-            <div class="row mb-3">
-                <div class="col-md-6">
-                    <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="Enter a strong password" required>
-                    <div class="invalid-feedback">Password must be 8-15 characters long and include uppercase, lowercase, and numbers.</div>
-                </div>
-                <div class="col-md-6">
-                    <label for="pan" class="form-label">PAN</label>
-                    <input type="text" class="form-control" id="pan" placeholder="Enter your PAN" required>
-                    <div class="invalid-feedback">Please enter a valid PAN.</div>
-                </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <label for="pincode" class="form-label">Pincode</label>
+                <input type="text" class="form-control" id="pincode" placeholder="Enter your pincode" required>
+                <div class="invalid-feedback">Please provide a valid pincode.</div>
             </div>
-            <div class="mb-3">
-                <label for="profilePicture" class="form-label">Profile Picture</label>
-                <input type="file" class="form-control" id="profilePicture" accept="image/*" required>
-                <div class="invalid-feedback">Please upload a profile picture less than 2MB.</div>
+            <div class="col-md-4">
+                <label for="contact" class="form-label">Contact No</label>
+                <input type="text" class="form-control" id="contact" placeholder="Enter your contact number" required>
+                <div class="invalid-feedback">Please provide a valid contact number.</div>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+            <div class="col-md-4">
+                <label for="dob" class="form-label">Date of Birth</label>
+                <input type="date" class="form-control" id="dob" required>
+                <div class="invalid-feedback">Please select a valid date of birth.</div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <label for="age" class="form-label">Age</label>
+                <input type="text" class="form-control" id="age" placeholder="Your age" disabled>
+            </div>
+            <div class="col-md-4">
+                <label for="gender" class="form-label">Gender</label>
+                <select class="form-select" id="gender" required>
+                    <option value="" disabled selected>Choose...</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+                <div class="invalid-feedback">Please select a gender.</div>
+            </div>
+            <div class="col-md-4">
+                <label for="education" class="form-label">Education</label>
+                <select class="form-select" id="education" required>
+                    <option value="" disabled selected>Choose...</option>
+                    <option value="High School">High School</option>
+                    <option value="Diploma">Diploma</option>
+                    <option value="Bachelor's">Bachelor's</option>
+                    <option value="Master's">Master's</option>
+                    <option value="Doctorate">Doctorate</option>
+                </select>
+                <div class="invalid-feedback">Please select an education level.</div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Choose a username" required>
+                <div class="invalid-feedback">Please choose a unique username starting with a letter.</div>
+            </div>
+            <div class="col-md-4">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter a strong password" required>
+                <div class="invalid-feedback">Password must include uppercase, lowercase, numbers, and be 8-15 characters long.</div>
+            </div>
+            <div class="col-md-4">
+                <label for="pan" class="form-label">PAN</label>
+                <input type="text" class="form-control" id="pan" placeholder="Enter your PAN" required>
+                <div class="invalid-feedback">Please enter a valid PAN.</div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="profilePicture" class="form-label">Profile Picture</label>
+            <input type="file" class="form-control" id="profilePicture" accept="image/*" required>
+            <div class="invalid-feedback">Please upload a profile picture less than 2MB.</div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
         <a href="search.html" class="btn btn-secondary mt-3">Go to Search Page</a>
-    </div>
-    <script src="form-validation.js"></script>
+    </form>
+</div>
+<script src="form-validation.js"></script>
 </body>
 </html>
